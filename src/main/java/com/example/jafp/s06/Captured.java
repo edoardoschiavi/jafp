@@ -20,7 +20,9 @@ public class Captured {
     private void capturing() {
         double local = Math.PI;
 
-        // a lambda capturing an instance field
+        /* a lambda capturing an instance field, creo un oggetto runnable e lo passo 
+         * alla execute che fa la run
+         */
         Runnable r1 = () -> System.out.println("Modifying the instance variable " + ++instanceValue);
         CapturedUser.execute(r1);
 
