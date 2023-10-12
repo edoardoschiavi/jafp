@@ -20,6 +20,12 @@ public class LambdaSort {
      * @param args not used
      */
     public static void main(String[] args) {
+    	Integer[] numbers = {1, 55, 2, 31, 31};
+    	
+    	// esempio per ordinare in modo crescente tramite lambda, l = left, r = right
+    	Arrays.sort(numbers, (l,r) -> l - r);
+    	System.out.println(Arrays.toString(numbers));
+    	
         String[] names = { "Tom", "Bo", "Billy", "Tony", "Kim", "Marcy", "Josh" };
         System.out.println("As created: " + Arrays.toString(names));
 
